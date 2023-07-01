@@ -149,16 +149,16 @@ Console.WriteLine("*                                             Quantifier Oper
 Console.WriteLine("*-------------------------------------------------------------------------------------------------------------------*");
 ArrayList mixedCollection = DataHelper.GetHeterogenousDataCollection();
 
-
-var stringResult = from s in mixedCollection.OfType<string>()
-                   select s;
 Console.WriteLine("*--------------------------------*");
 Console.WriteLine("*  Data Type - String            *");
 Console.WriteLine("*--------------------------------*");
+var stringResult = from s in mixedCollection.OfType<string>()
+                   select s;
 foreach (var item in stringResult)
 {
     Console.WriteLine(item);
 }
+
 Console.WriteLine("*--------------------------------*");
 Console.WriteLine("*  Data Type - Integer           *");
 Console.WriteLine("*--------------------------------*");
@@ -168,6 +168,7 @@ foreach (var item in intResult)
 {
     Console.WriteLine(item);
 }
+
 Console.WriteLine("*--------------------------------*");
 Console.WriteLine("*  Data Type - Object<Employee>  *");
 Console.WriteLine("*--------------------------------*");
@@ -178,6 +179,7 @@ foreach (var employee in employeeResults)
 {
     Console.WriteLine($"{employee.Id,-5} {employee.FirstName,-10} {employee.LastName,-10} {employee.AnnualSalary}");
 }
+
 Console.WriteLine("*--------------------------------*");
 Console.WriteLine("*  Data Type - Object<Department>*");
 Console.WriteLine("*--------------------------------*");
