@@ -18,7 +18,7 @@ namespace LINQ_Examples_2
                 LastName = "Mancuyas",
                 AnnualSalary = 60000.3m,
                 IsManager = true,
-                DepartmentId = 6,
+                DepartmentId = 1,
             };
             employees.Add(employee);
 
@@ -26,7 +26,7 @@ namespace LINQ_Examples_2
             {
                 Id = 2,
                 FirstName = "Sio",
-                LastName = "Jeuong",
+                LastName = "Jeong",
                 AnnualSalary = 80000.1m,
                 IsManager = true,
                 DepartmentId = 2,
@@ -58,13 +58,25 @@ namespace LINQ_Examples_2
             employee = new Employee()
             {
                 Id = 5,
+                FirstName = "Saena",
+                LastName = "Jeong",
+                AnnualSalary = 30000.2m,
+                IsManager = false,
+                DepartmentId = 2,
+            };
+            employees.Add(employee);
+
+            employee = new Employee()
+            {
+                Id = 6,
                 FirstName = "Chris",
                 LastName = "Mancuyas",
                 AnnualSalary = 100000.2m,
                 IsManager = false,
-                DepartmentId = 6,
+                DepartmentId = 3,
             };
             employees.Add(employee);
+
             return employees;
         }
 
